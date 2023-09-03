@@ -1,0 +1,34 @@
+/* pic部分 */
+.picture img {
+    width: 100%;
+    height: auto;
+}
+/* card部分 */
+.card-list {
+    display: block;
+    margin: 0;
+}
+.card-box {
+    width: 100%;
+    margin: 0;
+}
+.card-box .msg {
+    display: inline-block;
+}
+.mdui-card-header {
+    display: flex;
+    padding: 0 6px;
+}
+.image-box {
+    width: 100%;
+}
+@media (max-width: 300px) {
+    .tools,
+    .close {
+        display: none;
+    }
+    .image-box .image {
+        width: 45%;
+        height: 100px;
+    }
+}

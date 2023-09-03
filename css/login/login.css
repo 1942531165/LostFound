@@ -1,0 +1,186 @@
+.mobile-box,
+.mdui-tab {
+    display: none;
+}
+body {
+    overflow: hidden;
+}
+.sign-in,
+.sign-up {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: 400ms ease-in-out;
+}
+.sign-in {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+.sign-up {
+    left: 0;
+    opacity: 0;
+    width: 50%;
+    z-index: 1;
+}
+.mdui-textfield {
+    padding-left: 20px !important;
+}
+.mdui-textfield-input {
+    width: 70% !important;
+    margin-left: 40px !important;
+}
+.mdui-textfield {
+    padding-top: 0;
+}
+
+@media (min-width: 768px) {
+    .main {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: calc(100% - 64px);
+        background: url('../../asset/bg.jpg') center center no-repeat;
+        background-size: cover;
+    }
+    .main-box {
+        overflow: hidden;
+        position: relative;
+        height: 400px;
+        width: 100%;
+        max-width: 750px;
+        background-color: #e9e9e9;
+        border-radius: 10px;
+        box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25), 0 0.7rem 0.7rem rgba(0, 0, 0, 0.22);
+    }
+    .active .sign-in {
+        animation: hide 400ms;
+        opacity: 0;
+        transform: translateX(100%);
+        z-index: 2;
+    }
+    .active .sign-up {
+        /* 靠动画实现在中间出现 */
+        animation: show 400ms;
+        opacity: 1;
+        transform: translateX(100%);
+        z-index: 5;
+    }
+    .overlay-container {
+        height: 100%;
+        left: 50%;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        transition: 400ms ease-in-out;
+        width: 50%;
+        z-index: 100;
+    }
+    .active .overlay-container {
+        transform: translateX(-100%);
+    }
+    .overlay {
+        background: url('../../asset/bg.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        left: -100%;
+        position: relative;
+        transform: translateX(0);
+        transition: 400ms ease-in-out;
+        width: 200%;
+    }
+    .active .overlay {
+        transform: translateX(50%);
+    }
+    .panel {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        text-align: center;
+        transform: translateX(0);
+        transition: 400ms ease-in-out;
+        width: 50%;
+    }
+    .left {
+        transform: translateX(-20%);
+    }
+    .active .left {
+        transform: translateX(0);
+    }
+    .right {
+        right: 0;
+        transform: translateX(0);
+    }
+    .active .right {
+        transform: translateX(20%);
+    }
+    .form > .btn {
+        bottom: 65px;
+        left: 50%;
+        margin-left: -80px;
+    }
+}
+.btn,
+h3 {
+    font-family: '仿宋';
+    padding-left: 15px;
+    letter-spacing: 15px;
+}
+h3 {
+    margin: 60px 0 0;
+    padding: 0;
+    font-size: 26px;
+    text-align: center;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+.main .main-box input {
+    padding-left: 6px;
+}
+.btn {
+    position: absolute;
+    width: 160px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    background-image: linear-gradient(to right, #305780, #4687b1);
+    color: #eee;
+    font-size: 20px;
+    transition: 100ms ease-in-out;
+    cursor: pointer;
+}
+.btn:active {
+    transform: scale(0.9);
+}
+@keyframes show {
+    0%,
+    49.99% {
+        opacity: 0;
+        z-index: 1;
+    }
+    50%,
+    100% {
+        opacity: 1;
+        z-index: 5;
+    }
+}
+@keyframes hide {
+    0%,
+    49.99% {
+        opacity: 1;
+        z-index: 5;
+    }
+    50%,
+    100% {
+        opacity: 0;
+        z-index: 1;
+    }
+}

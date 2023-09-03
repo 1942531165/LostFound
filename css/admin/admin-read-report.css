@@ -1,0 +1,59 @@
+/* report */
+.report-data {
+    margin: 60px 300px;
+    width: 360px;
+}
+.report-data .mdui-card {
+    max-height: 530px;
+}
+.report-data .card-body > div {
+    height: auto;
+}
+.report-data .card-body h4 {
+    width: 80px !important;
+}
+.report-data .card-body span {
+    display: block;
+    width: auto;
+}
+.report-data .troduce {
+    font-size: 22px;
+}
+.report-data .lost {
+    color: #c92c33;
+}
+.report-data .found {
+    color: #3f51b5;
+}
+.decide {
+    position: relative;
+    left: 50%;
+    margin: 20px -100px;
+    width: 200px;
+}
+/* image-box */
+.image-box {
+    margin: 60px -150px;
+    width: 330px;
+    height: 0;
+    z-index: 4;
+}
+.image-box .image-list {
+    max-height: 510px;
+    overflow-y: scroll;
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color: #fff;
+}
+.image-box .image {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    margin-bottom: 7px;
+    margin-left: 0;
+    margin-top: 0;
+}
+.image-box .image-list::-webkit-scrollbar {
+    display: none;
+}

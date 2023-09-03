@@ -1,0 +1,42 @@
+@media (max-width: 780px) {
+    .del-main {
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    .simple-box {
+        position: relative;
+    }
+    .success .success-shade img,
+    .audit .audit-shade img,
+    .auditing .auditing-shade img {
+        width: 80px;
+        height: 80px;
+    }
+    .success .success-shade,
+    .auditing .auditing-shade {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .success .success-shade,
+    .audit .audit-shade,
+    .auditing .auditing-shade {
+        flex-direction: row;
+    }
+    .success .success-shade span,
+    .audit .audit-shade span,
+    .auditing .auditing-shade span {
+        margin-left: 10px;
+        font-size: 20px !important;
+        color: #fff;
+    }
+}
+@media (max-width: 300px) {
+    .simple-name,
+    .simple-found,
+    .simple-lost,
+    .simple-done {
+        font-size: 16px;
+    }
+}

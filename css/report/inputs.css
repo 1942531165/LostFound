@@ -1,0 +1,53 @@
+/* 必填提示 */
+.reports .tips {
+    color: #e02f3b;
+    margin: 0 5px;
+}
+.mdui-textfield-invalid-html5 .mdui-textfield-input,
+.mdui-textfield-invalid-html5.mdui-textfield-focus .mdui-textfield-input {
+    border: 1px solid #e02f3b !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
+.reports .address,
+.reports .time {
+    width: 47.5% !important;
+}
+.reports .time {
+    margin-left: 5% !important;
+}
+.reports .name {
+    width: 15% !important;
+}
+.reports .class,
+.reports .contact {
+    margin-left: 5% !important;
+}
+.reports .class {
+    width: 25% !important;
+}
+.reports .contact {
+    width: 50% !important;
+}
+/* 内容 */
+.reports .title {
+    font-size: 20px;
+}
+.reports .message {
+    padding-left: 10px;
+    font-size: 20px;
+    border: 1px solid #aaa;
+    transition: 200ms ease-in-out;
+}
+.reports .message:hover,
+.reports .message:focus {
+    box-shadow: none !important;
+    border: 1px solid #2c58c7 !important;
+}
+.reports .message:focus {
+    box-shadow: inset 0px 0px 1px 0px #2c58c7 !important;
+}
+/* textarea */
+.reports textarea {
+    height: 36px;
+}

@@ -1,0 +1,46 @@
+/* 新增用户 */
+.add-user-shade .user-box {
+    margin: 140px auto;
+    width: 400px;
+    height: 320px;
+}
+.add-user-shade .user-box h3 {
+    text-align: center;
+    margin: 30px 0 10px;
+    padding: 0;
+    user-select: none;
+}
+.add-user-shade .mdui-textfield {
+    padding-top: 0 !important;
+    padding-left: 40px !important;
+}
+.add-user-shade .user-box input {
+    width: 260px !important;
+    margin-left: 36px !important;
+    padding-left: 6px;
+}
+.add-user-shade .mdui-textfield-helper,
+.add-user-shade .mdui-textfield-error {
+    margin-left: 36px !important;
+}
+.add-user-shade .cancel-user {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    font-size: 18px;
+    border-radius: 50%;
+    color: #666;
+    z-index: 4;
+    transition: 200ms ease-in-out;
+    user-select: none;
+}
+.add-user-shade .cancel-user:hover {
+    color: #c92c33;
+}
+.add-user-shade .add-user-btn {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -90px;
+    width: 180px;
+}

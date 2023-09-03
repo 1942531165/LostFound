@@ -1,0 +1,55 @@
+/* 780px及以下 适配 */
+@media (max-width: 780px) {
+    /* 隐藏PC端的部分 */
+    .pc-title,
+    .radio,
+    .search-container,
+    .card-list,
+    .pc-user {
+        display: none;
+    }
+    /* 标题 */
+    .mobile-title {
+        display: inline-block;
+    }
+    .login {
+        margin: 0;
+    }
+    .mdui-btn {
+        font-size: 18px;
+    }
+    /* 侧边栏 */
+    .mdui-appbar-with-toolbar .mdui-drawer {
+        z-index: 2001 !important;
+    }
+    .mdui-drawer {
+        top: 0;
+    }
+    /* 右上角的个人部分 */
+    .mobile-user p {
+        margin: 0 10px;
+        max-width: 140px;
+        text-align: center;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow: hidden;
+    }
+    .back {
+        display: flex;
+        justify-content: center;
+    }
+    .back button {
+        margin-top: 30px;
+        width: 120px;
+    }
+}
+/* 300px及以下 适配 */
+@media (max-width: 300px) {
+    .mdui-toolbar > * {
+        margin: 0 8px 0 0;
+    }
+    .login a {
+        min-width: 40px;
+    }
+}

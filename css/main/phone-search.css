@@ -1,0 +1,28 @@
+@media (max-width: 780px) {
+    /* 搜索框部分 */
+    .search-container {
+        position: fixed;
+        top: 56px;
+        left: 0;
+        margin: 0;
+        padding: 5px 0 0;
+        background-color: #3f51b5;
+        z-index: 0;
+    }
+    .search-container .tab {
+        display: -webkit-box;
+    }
+    .search-input input {
+        padding-left: 10px;
+        width: 70%;
+        border-radius: 50px;
+    }
+    .search-btn {
+        width: 42px;
+        height: 42px;
+        line-height: 42px;
+    }
+    .search-btn:hover i {
+        transform: scale(1);
+    }
+}

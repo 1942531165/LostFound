@@ -1,0 +1,71 @@
+* {
+    font-family: '黑体';
+}
+.mdui-appbar-with-toolbar .mdui-appbar,
+.mdui-appbar-with-toolbar .mdui-toolbar {
+    z-index: 1;
+}
+.mdui-drawer {
+    border-right: 1px solid #ccc;
+    box-shadow: 1px 0 3px #ccc;
+}
+.mdui-drawer-open {
+    z-index: 2 !important;
+}
+.shade {
+    z-index: 3 !important;
+}
+.mdui-list {
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+/* PC端header */
+.pc-title {
+    font-family: '宋体';
+}
+.mdui-menu {
+    padding: 0;
+    margin: 0;
+}
+/* 头像 */
+.head {
+    overflow: hidden;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+}
+.head img {
+    width: 100%;
+    height: 100%;
+}
+.admin-pc,
+.admin-mobile {
+    display: none;
+}
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+.user p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 10px 0 0;
+}
+.user p span {
+    font-weight: normal;
+}
+.user .log-out {
+    font-weight: bold;
+    color: #d13f3d;
+}
+.mobile-title,
+.search-container .tab,
+.simple-list,
+.mobile-user {
+    display: none;
+}

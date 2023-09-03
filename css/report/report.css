@@ -1,0 +1,66 @@
+/* 主体 */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.main-box {
+    width: 60%;
+    padding: 0 30px;
+}
+.upload {
+    position: absolute;
+}
+/* 发布主体 */
+.person {
+    display: flex;
+}
+.thre {
+    display: flex;
+}
+/* 图片盒子 */
+.image-box {
+    display: flex;
+    position: relative;
+}
+.image {
+    position: relative;
+}
+.delete {
+    position: absolute;
+}
+/* 发布按钮 */
+.btns {
+    display: flex;
+    justify-content: space-evenly;
+}
+.publish,
+.back,
+.publish-btn,
+.back-btn,
+.upload,
+.add-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.publish-btn:hover {
+    background-color: #5269eb !important;
+}
+.back-btn {
+    background-color: #c92c33;
+}
+.back-btn:hover {
+    background-color: #eb333c;
+}
+.publish-btn,
+.back-btn {
+    margin: 50px 0 !important;
+    width: 180px;
+    height: 45px;
+    line-height: 45px;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+}

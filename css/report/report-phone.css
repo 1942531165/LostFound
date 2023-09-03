@@ -1,0 +1,72 @@
+@media (max-width: 1090px) {
+    .main-box {
+        width: 80%;
+    }
+}
+@media (max-width: 780px) {
+    /* 发布页面 */
+    .reports {
+        margin: 0;
+        padding: 15px;
+    }
+    .reports,
+    .mdui-textfield {
+        width: 100%;
+    }
+    .mdui-textfield {
+        padding-top: 0;
+    }
+    .thre {
+        flex-direction: column;
+    }
+    .thre .address,
+    .thre .time {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    .reports .image-upload {
+        margin: 0;
+        margin-bottom: 8px;
+    }
+    .person {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .person .name,
+    .person .class {
+        margin: 0 !important;
+    }
+    .person .name {
+        width: 35% !important;
+    }
+    .person .class {
+        width: 60% !important;
+    }
+    .person .contact {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    /* 图片 */
+    .reports .image-box,
+    .reports .upload-box {
+        min-height: 160px;
+    }
+    .reports .image,
+    .reports .add {
+        width: 50%;
+        height: 150px;
+    }
+    .reports .add-img p {
+        font-size: 18px;
+    }
+    .publish-btn,
+    .back-btn {
+        margin: 50px 0;
+        width: 150px;
+        height: 45px;
+        line-height: 45px;
+        border: none;
+        border-radius: 50px;
+        text-align: center;
+    }
+}

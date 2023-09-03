@@ -1,0 +1,288 @@
+.mdui-tab a {
+    font-size: 16px;
+}
+/* avatar-info */
+.main {
+    display: flex;
+    padding: 0 140px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* 是否为 flex */
+.personal-info .avatar-top,
+.personal-info .avatar-bottom,
+.personal-info .avatar-info,
+.personal-info .avatar-info > div,
+.personal-info .show-info,
+.personal-info .show-info > div {
+    display: flex;
+}
+/* 垂直排序 */
+.personal-info .avatar-info,
+.personal-info .show-info {
+    flex-direction: column;
+}
+/* 垂直水平居中 */
+.personal-info .avatar-top,
+.personal-info .avatar-bottom,
+.personal-info .show-info > div {
+    justify-content: center;
+    align-items: center;
+}
+.avatar-top,
+.avatar-bottom {
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.avatar-top {
+    padding: 40px 0;
+}
+.avatar-bottom {
+    padding: 0;
+}
+/* 换头像的部分 */
+/* 图片不可选中 */
+.personal-shade img,
+.personal-shade .title,
+.personal-shade .close,
+.personal-shade .tips,
+.personal-shade .upload-avatar {
+    user-select: none;
+}
+.personal-shade,
+.personal-shade .shadow {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.personal-shade {
+    display: none;
+    position: fixed;
+    z-index: 2;
+}
+.personal-shade .shadow {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 3;
+}
+.custom-main {
+    position: relative;
+    margin: 50px auto;
+    padding: 0 30px;
+    z-index: 4;
+    width: 470px;
+    height: 550px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+/* 关闭按钮和标题 */
+.title {
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+}
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #333;
+    transition: 200ms ease-in-out;
+}
+.close:hover {
+    color: #999;
+}
+/* 下面部分 */
+.custom-bottom {
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+}
+.upload-avatar {
+    margin-top: 30px;
+}
+.upload-avatar input {
+    display: none;
+}
+/* 切换头像提示部分 */
+.tips {
+    font-family: Arial, '黑体';
+    color: #999;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 20px;
+}
+.btn {
+    display: inline-block;
+    width: 180px;
+    height: 30px;
+    line-height: 30px;
+    border: 2px solid #3f51b5;
+    border-radius: 5px;
+    color: #3f51b5;
+    font-size: 18px;
+    text-align: center;
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+    user-select: none;
+}
+.btn:hover {
+    background-color: #3f51b5;
+    color: #fff;
+}
+/* 头像部分 */
+.personal-info .avatar-head {
+    position: relative;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.avatar-head .head {
+    width: 100%;
+    height: 100%;
+}
+.head-shade {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 150px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+.head-shade i {
+    user-select: none;
+}
+.modify-head {
+    font-size: 50px;
+    color: #fff;
+}
+.avatar-info {
+    margin-left: 50px;
+    height: 120px;
+    line-height: 60px;
+}
+.avatar-info div,
+.show-info div,
+.show-info input {
+    font-size: 24px;
+}
+.avatar-info > div div:nth-child(1),
+.show-info > div div:nth-child(1) {
+    font-family: '黑体';
+    font-weight: normal;
+}
+.avatar-info > div div:nth-child(2),
+.show-info > div div:nth-child(2),
+.show-info > div input {
+    font-family: '仿宋';
+    font-weight: bold;
+}
+.avatar-info > div div:nth-child(1) {
+    width: 120px;
+}
+.avatar-info > div div:nth-child(2) {
+    width: 400px;
+}
+/* 防止超出屏幕 */
+.info,
+.avatar-top .account {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+/* 显示个人信息 */
+.personal-info .show-info > div {
+    width: 600px;
+    height: 60px;
+    transition: 200ms ease-in-out;
+}
+.personal-info .show-info > div div:nth-child(1) {
+    width: 25%;
+}
+.personal-info .show-info > div div:nth-child(2) {
+    display: inline-block;
+    width: 75%;
+    padding-left: 4px;
+}
+.personal-info .show-info > div input {
+    display: none;
+    width: 75%;
+    height: 35px;
+    border: 1px solid #ccc;
+    transition: 200ms ease-in-out;
+    box-sizing: border-box;
+    outline: none;
+}
+/* 修改个人信息按钮 */
+.personal-info .change-info-btn {
+    width: 150px;
+    height: 48px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    transition: 200ms ease-in-out;
+    box-sizing: border-box;
+    outline: none;
+    transition: 300ms ease-in-out;
+}
+.personal-info .change-info-btn:hover {
+    box-shadow: none;
+}
+.personal-info .show-info > div:focus-within,
+.personal-info .show-info > div:hover {
+    color: #3f51b5;
+}
+.personal-info .show-active > div:focus-within,
+.personal-info .show-active > div:hover {
+    color: #c92c33;
+}
+.personal-info .show-active input:focus-within,
+.personal-info .show-active input:hover {
+    border: 1px solid #c92c33;
+}
+/* 更换头像部分 */
+.pic-wrap {
+    position: relative;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 280px;
+    border: 2px solid #ccc;
+    background-color: #333;
+}
+.pic-wrap img {
+    position: absolute;
+    max-width: 280px;
+    max-height: 280px;
+}
+.preview-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    font-size: 18px;
+}
+.preview {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    background-color: #333;
+}

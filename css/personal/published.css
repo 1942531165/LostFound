@@ -1,0 +1,178 @@
+body {
+    height: 1000px;
+}
+.mdui-appbar {
+    z-index: 2 !important;
+}
+.no-report {
+    display: none;
+    text-align: center;
+}
+/* 按钮组 */
+.del-cover,
+.del-screen,
+.del-main {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.del-cover {
+    display: none;
+    position: fixed;
+    z-index: 2;
+}
+.del-screen {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 4;
+}
+.del-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+.del-box {
+    width: 400px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 1px 2px #fff;
+}
+.del-title {
+    margin-top: 20px;
+    height: 60px;
+    text-align: center;
+}
+.del-title div {
+    font-size: 18px;
+    line-height: 30px;
+}
+.tip {
+    color: #c92c33;
+}
+.del-btns {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.del-btns button {
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #fff;
+    outline: none;
+    transition: 100ms ease-in-out;
+}
+.cancel {
+    border: 2px solid #c92c33;
+    color: #c92c33;
+}
+.confirm {
+    border: 2px solid #3f51b5;
+    color: #3f51b5;
+}
+.cancel:hover {
+    background-color: #c92c33;
+    color: #fff;
+}
+.confirm:hover {
+    background-color: #3f51b5;
+    color: #fff;
+}
+
+/* 状态 */
+.done,
+.simple-done {
+    color: #24ab48;
+    font-weight: bold;
+}
+/* 成功显示 */
+.success,
+.audit,
+.auditing {
+    position: relative;
+}
+.success .success-shade,
+.audit .audit-shade,
+.auditing .auditing-shade {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.edit-shade,
+.del-shade,
+.success .success-shade,
+.audit .audit-shade,
+.auditing .auditing-shade {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.success-shade,
+.del-shade,
+.edit-shade {
+    display: none;
+}
+.edit-shade .edit-btn,
+.del-shade .del-btn,
+.success-shade img,
+.success-shade span,
+.audit-shade img,
+.audit-shade span,
+.auditing-shade img,
+.auditing-shade span {
+    user-select: none;
+}
+.del-shade .del-btn,
+.edit-shade .edit-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -90px;
+    width: 180px;
+    height: 40px;
+    background-color: #fff;
+    font-size: 18px;
+}
+.edit-shade .edit-btn:hover {
+    background-color: #ccc;
+}
+.success .success-shade img,
+.audit .audit-shade img,
+.auditing .auditing-shade img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.success .success-shade span,
+.audit .audit-shade span,
+.auditing .auditing-shade span {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
+/* 按钮组 */
+.button-bar {
+    margin-top: 10px;
+    margin-right: 40px;
+    text-align: right;
+}
+.button-bar button {
+    width: 100px;
+}
+/* 寻回状态 */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    padding: 10px;
+    font-size: 16px;
+    color: #666;
+}

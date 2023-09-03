@@ -1,0 +1,62 @@
+/* 修改帖子 */
+.add-report-shade .report-box,
+.edit-report .edit-box {
+    overflow-y: scroll;
+    margin: 20px auto;
+    padding: 0 30px;
+    width: 800px;
+    height: 600px;
+}
+.reports .image-upload {
+    margin: 0;
+}
+.reports .upload-box {
+    display: flex;
+    position: relative;
+}
+.reports .upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.reports .add {
+    width: 25%;
+    height: 200px;
+}
+.reports .add-img {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.reports .img {
+    position: relative;
+}
+.reports input,
+.reports textarea {
+    padding: 0 !important;
+    margin: 0 !important;
+    padding-left: 8px !important;
+    width: 100%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    outline: none;
+}
+.reports textarea {
+    padding: 8px !important;
+}
+.reports .thre,
+.reports .personal {
+    display: flex;
+}
+.reports .personal .name {
+    margin-left: 0;
+}
+.reports .edit-btns {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.reports .edit-btns button {
+    width: 150px;
+}

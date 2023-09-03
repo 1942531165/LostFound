@@ -1,0 +1,195 @@
+.main {
+    display: block !important;
+    padding: 0 !important;
+}
+.mdui-appbar-with-toolbar {
+    padding: 0;
+}
+.mdui-list > li {
+    padding: 0 16px;
+}
+.mdui-list > a > li {
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    transition: 100ms ease-in-out;
+}
+.mdui-list > a:hover li {
+    background-color: #efefef;
+}
+.main {
+    position: absolute;
+    top: 84px;
+    left: 260px;
+}
+.data-form {
+    overflow-y: scroll;
+    height: 480px;
+}
+.list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.list li {
+    float: left;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+.title,
+.data {
+    /* 添加省略号 */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* 其他 */
+    padding: 0 8px;
+    max-width: 100px;
+    height: 36px;
+    max-height: 36px;
+    line-height: 36px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-top: none;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.title {
+    user-select: none;
+}
+.checks .title,
+.checks .data {
+    border-left: 1px solid #ccc;
+}
+.checks.data {
+    z-index: 1;
+}
+.checks .data input {
+    z-index: -1;
+}
+.edit .title,
+.edit .btns {
+    max-width: none;
+}
+.btns {
+    line-height: 100%;
+}
+.btns button {
+    padding: 0;
+    margin-top: 6px;
+    width: 48px;
+    min-width: 48px;
+    height: 24px;
+    line-height: 24px;
+}
+.finish,
+.pass {
+    color: #24ab48;
+}
+.unfinish,
+.under {
+    color: #c92c33;
+}
+/* 数据总数 */
+.total span {
+    margin-left: 6px;
+    font-size: 24px;
+    color: #3f51b5;
+}
+/* 默认不显示特殊按钮 */
+.verified,
+.unverified,
+.returned,
+.unreturned {
+    display: none;
+}
+/* 详细信息 */
+.card-box .class {
+    color: #000 !important;
+}
+/* 遮罩层 */
+.shade,
+.floating-shade,
+.edit-head-shade,
+.add-user-shade,
+.add-report-shade {
+    display: none;
+}
+.floating-shade,
+.edit-head-shade,
+.add-user-shade,
+.add-report-shade {
+    z-index: 3;
+}
+.edit-head-shade,
+.add-user-shade,
+.add-report-shade,
+.floating-shade,
+.shade,
+.shadow {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.shadow {
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+/* 数据 */
+.warn,
+.edit-user,
+.edit-report,
+.add-user,
+.add-report,
+.datas {
+    display: flex;
+    width: 100%;
+}
+.user-head {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+/* 总体 */
+.warn-box,
+.edit-box,
+.user-box,
+.report-box,
+.report-data,
+.user-data {
+    position: relative;
+    background-color: #fff;
+    z-index: 3;
+}
+.card-body {
+    max-height: 400px;
+    overflow-y: scroll;
+}
+.card-body > div {
+    height: 24px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.card-body h4 {
+    display: inline-block;
+    width: 64px;
+    margin: 0;
+    padding: 0;
+}
+.card-body span {
+    display: inline-block;
+    padding-left: 20px;
+    width: 180px;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+.loading-shade .shadow {
+    z-index: 3 !important;
+}
+.data-form .list {
+    display: none;
+}

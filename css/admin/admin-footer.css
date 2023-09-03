@@ -1,0 +1,40 @@
+.footer {
+    display: flex;
+    margin-top: 30px;
+}
+.page-btn,
+.page {
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    color: #666;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    user-select: none;
+}
+.page-btn {
+    width: 80px;
+}
+.pages {
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 428px;
+    margin: 0 10px;
+}
+.page {
+    display: inline-block;
+    width: 36px;
+    margin-right: 10px;
+}
+.page:last-child {
+    margin-right: 0;
+}
+.page:hover,
+.page-btn:hover,
+.select {
+    border: 1px solid transparent;
+    background-color: #3f51b5;
+    color: #fff;
+}

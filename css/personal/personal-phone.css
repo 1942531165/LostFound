@@ -1,0 +1,75 @@
+@media (max-width: 780px) {
+    .main {
+        padding: 0 20px;
+    }
+    .personal-info .avatar-top {
+        flex-direction: column;
+        padding: 0;
+        padding-top: 20px;
+    }
+    /* 头像 */
+    .personal-info .avatar-head {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+    .head-shade {
+        line-height: 100px;
+    }
+    .modify-head {
+        font-size: 50px;
+    }
+    .personal-info .avatar-info {
+        margin: 0;
+        margin-bottom: 20px;
+        padding: 0;
+        height: 70px;
+        line-height: 35px;
+        font-size: 18px;
+    }
+    /* 修改个人信息按钮 */
+    .change-info-btn {
+        position: absolute;
+        bottom: 30px;
+        left: 0;
+        margin-left: 90px;
+        z-index: 1;
+    }
+    .personal-info .avatar-info div,
+    .personal-info .show-info div,
+    .personal-info .show-info input {
+        font-size: 20px;
+    }
+    .personal-info .show-info > div,
+    .personal-info .avatar-info > div div:nth-child(1),
+    .personal-info .avatar-info > div div:nth-child(2) {
+        max-width: 100%;
+        width: auto;
+    }
+    /* 显示个人信息 */
+    .personal-info .show-info {
+        width: 100%;
+    }
+    .personal-info .show-info > div {
+        width: 100%;
+        height: 50px;
+    }
+    .personal-info .show-info > div div:nth-child(1) {
+        width: 100px;
+    }
+    .personal-info .show-info > div div:nth-child(2) {
+        width: 200px;
+    }
+    .personal-info .show-info > div input {
+        display: none;
+        width: 200px;
+    }
+}
+@media (max-width: 300px) {
+    .personal-info .show-info > div div:nth-child(2) {
+        width: 120px;
+    }
+    .personal-info .show-info > div input {
+        width: 120px;
+    }
+}
